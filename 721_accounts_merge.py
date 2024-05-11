@@ -1,7 +1,8 @@
 # Link: https://leetcode.com/problems/accounts-merge/
 # union-find
 from typing import List
-import collections 
+import collections
+
 
 class UnionFind:
     def __init__(self):

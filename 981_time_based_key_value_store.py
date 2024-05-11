@@ -1,6 +1,6 @@
 class TimeMap:
     def __init__(self):
-        self.data = {} # key: list of tuples(value, timestamp)
+        self.data = {}  # key: list of tuples(value, timestamp)
 
     def set(self, key: str, value: str, timestamp: int) -> None:
         if key not in self.data:

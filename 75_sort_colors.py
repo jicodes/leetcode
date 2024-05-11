@@ -2,6 +2,7 @@
 
 from typing import List
 
+
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
         """
@@ -9,7 +10,7 @@ class Solution:
         """
         # Initialize pointers for the three colors
         red, white, blue = 0, 0, len(nums) - 1
-        
+
         while white <= blue:
             if nums[white] == 0:
                 # If current element is red, swap with red pointer and move both pointers to the right
@@ -24,10 +25,11 @@ class Solution:
                 nums[white], nums[blue] = nums[blue], nums[white]
                 blue -= 1
 
+
 # Test cases
 nums = [2, 0, 2, 1, 1, 0]
 solution = Solution()
 solution.sortColors(nums)
-print(nums)  
+print(nums)
 
 # Output should be [0, 0, 1, 1, 2, 2]
